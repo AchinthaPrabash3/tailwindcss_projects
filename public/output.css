@@ -1500,6 +1500,10 @@ video {
   font-weight: 600;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1536,6 +1540,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.caret-purple-50 {
+  caret-color: #faf5ff;
 }
 
 .shadow-3xl {
@@ -1587,6 +1595,43 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:bottom-\[-100\%\]::after {
+  content: var(--tw-content);
+  bottom: -100%;
+}
+
+.after\:rounded-full::after {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.after\:bg-white::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.after\:text-sm::after {
+  content: var(--tw-content);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.after\:font-thin::after {
+  content: var(--tw-content);
+  font-weight: 100;
+}
+
+.after\:capitalize::after {
+  content: var(--tw-content);
+  text-transform: capitalize;
 }
 
 .hover\:-translate-y-1:hover {
@@ -1642,6 +1687,41 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:after\:p-2:hover::after {
+  content: var(--tw-content);
+  padding: 0.5rem;
+}
+
+.hover\:after\:content-\[\'\@AchinthaPr81991\'\]:hover::after {
+  --tw-content: '@AchinthaPr81991';
+  content: var(--tw-content);
+}
+
+.hover\:after\:content-\[\'\@achintha0110\'\]:hover::after {
+  --tw-content: '@achintha0110';
+  content: var(--tw-content);
+}
+
+.hover\:after\:content-\[\'AchinthaPrabash3\'\]:hover::after {
+  --tw-content: 'AchinthaPrabash3';
+  content: var(--tw-content);
+}
+
+.hover\:after\:content-\[\'freecodecamp\'\]:hover::after {
+  --tw-content: 'freecodecamp';
+  content: var(--tw-content);
+}
+
+.hover\:after\:content-\[\'iCodedthis\'\]:hover::after {
+  --tw-content: 'iCodedthis';
+  content: var(--tw-content);
+}
+
+.hover\:after\:content-\[\'linkedin\'\]:hover::after {
+  --tw-content: 'linkedin';
+  content: var(--tw-content);
 }
 
 @media (prefers-color-scheme: dark) {
