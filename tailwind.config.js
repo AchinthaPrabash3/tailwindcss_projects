@@ -9,6 +9,9 @@ module.exports = {
       boxShadow: {
         "3xl": "0 -5px 50px -15px rgba(0, 0, 0, 0.3)",
       },
+      fontFamily: {
+        Marcellus: "font-family:Marcellus",
+      },
       animation: {
         show: `@keyframes sh {
           from {

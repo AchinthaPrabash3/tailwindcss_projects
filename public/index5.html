@@ -3,21 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Marcellus"
+    />
+
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body class="container mx-auto">
-    <!--container-->
-    <div
-      class="grid grid-rows-3 md:grid-cols-2 lg:grid-cols-3 w-[90%] gap-2 mx-auto"
-    >
-      <!--items-->
-      <div class="h-[500px] bg-slate-500"></div>
-      <div class="h-[500px] bg-slate-500"></div>
-      <div class="h-[500px] bg-slate-500"></div>
-      <div class="h-[500px] bg-slate-500"></div>
-      <div class="h-[500px] bg-slate-500"></div>
-      <div class="h-[500px] bg-slate-500"></div>
-    </div>
+  <body>
+    <main class="font-[Marcellus] relative scroll-smooth">
+      <header class="w-full flex justify-between items-center h-12 relative">
+        <h1 class="text-2xl absolute left-2 top-2">logo</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-12 h-12 absolute right-2 top-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </header>
+      <section class="flex flex-col justify-center items-center">
+        <div
+          class="mt-[190px] mb-[100px] flex flex-col w-fit justify-center items-center"
+        >
+          <p
+            class="self-end text-[44px] capitalize flex items-center gap-2 pr-10"
+          >
+            <img src="./images/rec1.png" alt="" />
+            we're <span class="uppercase">nr </span> studio
+          </p>
+          <h1
+            class="text-9xl uppercase font-['Marcellus'] font-thin tracking-widest text-center"
+          >
+            grapic <br />
+            design
+          </h1>
+          <p
+            class="self-center text-3xl first-letter:uppercase mx-auto w-fit text-center"
+          >
+            with 10 years of experiance in <span class="uppercase">ui/ux</span>
+          </p>
+          <div class="flex gap-6 w-fit mt-5 items-center px-2">
+            <button
+              class="w-[200px] text-white bg-yellow-500 py-3 rounded-full text-lg"
+            >
+              schedule free call
+            </button>
+            <a href="">case studies</a>
+          </div>
+        </div>
+        <a href="#about">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 h-12 animate-bounce mb-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+      </section>
+      <section
+        class="bg-yellow-500 flex items-center justify-center px-4"
+        id="about"
+      >
+        <div
+          class="pt-[89px] pb-[100px] max-w-[870px] flex flex-col items-center justify-center"
+        >
+          <p
+            class="md:self-start self-end text-white capitalize pb-2 text-lg relative flex items-center"
+          >
+            <img src="./images/rec1.png" alt="" class="absolute -left-full" />
+            hello we're NR grafics studios
+          </p>
+          <p class="text-5xl text-white leading-[54px] border-b-2 border-white">
+            Welcome to our graphic design studio. Specializing in UI/UX Design,
+            Web Design, Mobile App Design, Social Media Design, and Logo Design,
+            we blend artistic vision with cutting-edge techniques to bring your
+            ideas to life. Join us.
+          </p>
+          <p class="self-start text-white pt-5 text-xl font-serif">
+            our expertease are :
+          </p>
+          <p
+            class="text-2xl self-start text-white capitalize tracking-wide pt-7"
+          >
+            UI/UX design / web design / mobil app design / social media design /
+            logo design
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
